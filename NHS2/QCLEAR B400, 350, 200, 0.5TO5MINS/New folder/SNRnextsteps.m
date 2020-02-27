@@ -37,8 +37,10 @@ Outsidearea= Y<100;
 binaryimage=imbinarize(Y,'adaptive','ForegroundPolarity','bright','Sensitivity',0.492);
 Normalized = imbinarize(Y);
 
-[labelled_hotspots, num] = bwlabel(binaryimage, 8);
-region_data_hotspots = regionprops('table',labelled_hotspots,'area','MajorAxisLength','MinorAxisLength',"Centroid");
+[labelled_hotspots, num2] = bwlabel(binaryimage, 8);
+region_data_hotspots = regionprops('table',labelled_hotspots,'area','MajorAxisLength','MinorAxisLength','PixelList')
+
+Pixels= region_data_hotspots.PixelList
 
 [labelled_phantom,num] =bwlabel(Normalized,8);   
 region_data_Phantom = regionprops('table', labelled_phantom, 'Area','MajorAxisLength', 'MinorAxisLength', 'Centroid');
@@ -51,20 +53,31 @@ total_area_Phantom = total_area_Phantom + region_data_Phantom.Area(g);
 end 
 
 
+for region=1:num2
+    list=[];
+    for pix=1:length(Pixels{region})
+        Pixels(region);
+        Pixel_location_x=Pixels{region}(pix);
+        Pixel_location_Y=Pixels{region}(pix,2);
+        pixval = impixel(SUV,Pixel_location_x,Pixel_location_Y);
+        
+    end
+end
 
 
 snr=total_area_binary/(total_area_Phantom - total_area_binary);
 disp("snr " + filename +": " +snr)
 
 f= figure('Name',""+filename,'NumberTitle', 'off' );
-subplot(1,4,1), imshow(Y)
+subplot(1,5,1), imshow(Y)
 title("Original");
-subplot(1,4,2), imshow(binaryimage)
+subplot(1,5,2), imshow(binaryimage)
 title("Hotspots");
-subplot(1,4,3), imshow(Normalized)
+subplot(1,5,3), imshow(Normalized)
 title("Total area")
-subplot(1,4,4), imshow(SUV)
+subplot(1,5,4), imshow(SUV)
 title("SUV")
+
 %frame_h = get(handle(gcf),'JavaFrame');
 %set(frame_h,'Maximized',1)
 
