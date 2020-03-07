@@ -1,22 +1,19 @@
-QCLEAR B200 05Min.dcm - Unable to find value
-QCLEAR B200 2Min.dcm- 0.32 basically useless
-QCLEAR B200 5Min.dcm-  0.4660
-QCLEAR B350 05Min.dcm - unable to find value
-QCLEAR B350 15Min.dcm-0.3730
-QCLEAR B350 1Min.dcm - unable to find value with 6 hot spots
-QCLEAR B350 25Min.dcm - 0.4620
-QCLEAR B350 2Min.dcm - 0.4470
-QCLEAR B350 35Min.dcm - 0.4610
-QCLEAR B350 3Min.dcm - 0.4650
-QCLEAR B350 45Min.dcm - 0.4730
-QCLEAR B350 4Min.dcm - 0.4760
-QCLEAR B350 5Min.dcm - 0.4890
-QCLEAR B400 05Min.dcm - Unable to find value
-QCLEAR B400 1Min.dcm -  unable to find value
-QCLEAR B400 15Min.dcm -  0.3890
-QCLEAR B400 2Min.dcm - 0.4560
-QCLEAR B400 35Min.dcm -  0.4650
-QCLEAR B400 3Min.dcm - 0.4670
-QCLEAR B400 45Min.dcm - 0.4800
-QCLEAR B400 4Min.dcm - 0.4790
-QCLEAR B400 5Min.dcm - 0.4920
+
+QCLEAR B200 5Min.dcm,  0.4660
+QCLEAR B350 15Min.dcm,0.3730
+QCLEAR B350 25Min.dcm, 0.4620
+QCLEAR B350 2Min.dcm , 0.4470
+QCLEAR B350 35Min.dcm, 0.4610
+QCLEAR B350 3Min.dcm , 0.4650
+QCLEAR B350 45Min.dcm , 0.4730
+QCLEAR B350 4Min.dcm ,0.4760
+QCLEAR B350 5Min.dcm , 0.4890
+QCLEAR B400 05Min.dcm , Unable to find value
+QCLEAR B400 1Min.dcm , unable to find value
+QCLEAR B400 15Min.dcm ,  0.3890
+QCLEAR B400 2Min.dcm ,0.4560
+QCLEAR B400 35Min.dcm,  0.4650
+QCLEAR B400 3Min.dcm , 0.4670
+QCLEAR B400 45Min.dcm , 0.4800
+QCLEAR B400 4Min.dcm , 0.4790
+QCLEAR B400 5Min.dcm , 0.4920
