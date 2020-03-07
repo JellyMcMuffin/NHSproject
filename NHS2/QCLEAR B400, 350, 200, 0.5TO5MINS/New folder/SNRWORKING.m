@@ -3,8 +3,8 @@ files =  uigetdir([]);
 d = dir([files, '\*.dcm']);
 nfiles=length(d);
 
-for i=1:nfiles
-    sensitivity=0.28;
+for i=12
+    sensitivity=0.464;
     
    
 
@@ -67,9 +67,9 @@ end
 
 
 % snr=total_area_binary/(total_area_Phantom - total_area_binary);
-% filename
-% num
-% sensitivity
+filename
+num
+sensitivity
 
 % 
 % f= figure('Name',""+filename,'NumberTitle', 'off');

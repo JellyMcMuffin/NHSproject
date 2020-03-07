@@ -4,7 +4,7 @@ d = dir([files, '\*.dcm']);
 nfiles=length(d);
 
 
-for i=1:1
+for i=18
    
 
 filename = d(i).name;
@@ -68,8 +68,7 @@ max_background=max(background_pixels)
 mean_background=mean(background_pixels)
 std_background=std(background_pixels)
 
-SNR_max_background=max_background/std_background
-SNR_mean_background=mean_background/std_background
+
 
 [labelled_phantom,num] =bwlabel(Normalized,8);   
 region_data_Phantom = regionprops('table', labelled_phantom, 'Area','MajorAxisLength', 'MinorAxisLength', 'Centroid');
@@ -108,16 +107,16 @@ for region=1:num2
     %z_std{region}=std(x);
 end
 
-
-
+SNR_mean{7}=max_background/std_background
+SNR_max{7}=mean_background/std_background
 
 subplot(1,3,1), imshow(Y)
 title("Original");
 subplot(1,3,2), imshow(binaryimage)
 title("Hotspots");
-axis on
-
-
+[filepath,name,ext]=fileparts(filename)
+name
+saveas(gcf, name+".png")
 
 
 end
