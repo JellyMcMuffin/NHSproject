@@ -1,0 +1,5 @@
+CHeck sensitiivifgitiy+ values
+LAST (ASK HER ABOUT STUFF INIT)Calculate uptake values -(copy her code ish)
+Plot SNR values
+plot CNR values
+
