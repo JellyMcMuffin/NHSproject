@@ -1,10 +1,10 @@
-clear
+clear;
 files =  uigetdir([]);
 d = dir([files, '\*.dcm']);
 nfiles=length(d);
 
-for i=3 
-    sensitivity=0.3   ;
+for i=7
+    sensitivity=0.44 ;
     
    
 
@@ -73,7 +73,7 @@ sensitivity
 
 % 
 f= figure('Name',""+filename,'NumberTitle', 'off');
-subplot(1,4,1), imshow(normalizedImage)
+subplot(1,4,1), imshow(Y)
 title("Original");
 subplot(1,4,2), imshow(binaryimage)
 title("Hotspots");

@@ -1,0 +1,10 @@
+  VPFX 5min.dcm' - 0.456
+VPFX 4Min.dcm - 0.441
+VPFX 45Min.dcm - 0.445
+'VPFX 3min.dcm' - 0.440  
+'VPFX 3.5MIN.dcm' - 0.444 
+VPFX 2MIN.dcm - 0.405
+VPFX 25MIN.dcm - 0.440
+VPFX 15Min.dcm - could not find value for 6 hotspots
+VPFX 05MIN.dcm -""
+VPFX 1MIn.dcm ""
