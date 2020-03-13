@@ -22,7 +22,7 @@ T_Half = 109.8*60;
 
 AcqDT=strcat(info.AcquisitionDate, info.AcquisitionTime);
 SeriesDT=strcat(info.SeriesDate, info.SeriesTime);
-InjDT=strcat(info.SeriesDate, ...
+InjDT=strcat(info.SeriesDate, ... 
     info.RadiopharmaceuticalInformationSequence.Item_1.RadiopharmaceuticalStartTime);
 
 
@@ -83,5 +83,5 @@ subplot(1,4,4), imshow(SUV)
 
 
 end
-
+ 
 

@@ -62,7 +62,7 @@ Radii= mean([region_data_hotspots.MajorAxisLength(1) region_data_hotspots.MinorA
 
 Pixels= region_data_hotspots.PixelIdxList;
 
-circle=drawcircle('Center',[128 128],'Radius',Radii, 'InteractionsAllowed', 'none', 'LineWidth',1);
+circle=drawcircle('Center',[128 128],'Radius',Radii, 'InteractionsAllowed', 'off');
 %mask=createMask(circle,SUV);
 background_pixels=SUV(circle.createMask);
 max_background=max(background_pixels)
